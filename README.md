@@ -1,7 +1,7 @@
 # Cachier des charges Supermarket
 
 # La présention du projet 
-Le projet consiste à développer une application de superette pour permettre aux clients de voir la liste des produits vendus. Le projet doit comporter un front-end pour afficher la liste des produits et une interface d'administration pour ajouter, modifier ou supprimer des produits. L'interface d'administration sera développée avec easyadmin et sera sécurisée par un email et un mot de passe.
+Le projet consiste à développer une application de superette pour permettre aux clients de voir la liste des produits en vente. Le projet doit comporter un front-end pour afficher la liste des produits et une interface d'administration pour ajouter, modifier ou supprimer des produits. L'interface d'administration sera développée avec easyadmin et sera sécurisée par un email et un mot de passe.
 
 # Les fonctionnalités
 ## Pour les clients :
