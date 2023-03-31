@@ -1,0 +1,40 @@
+{% extends "@EasyAdmin/layout.html.twig" %}
+
+{% block content %}
+<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+    <div class="w-full p-1 md:p-2">
+        <img
+        alt="gallery"
+        class="block h-full w-full rounded-lg object-cover object-center"
+        src="{{ asset('images/logo.png') }}" width="800" height="600"/>
+    </div>
+</div>
+</div>
+      
+<div class="sm:rounded-lg">
+  <div class="px-4 py-5 sm:px-6">
+    <h3 class="text-base font-semibold leading-6 text-gray-900">Application Information</h3>
+  </div>
+  <div class="border-t border-gray-200">
+    <dl>
+      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Company</dt>
+        <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">SuperMarket</dd>
+      </div>
+      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Email address</dt>
+        <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{{ app.user.email }}</dd>
+      </div>
+      <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Application for</dt>
+        <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Backend Developer</dd>
+      </div>
+      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">About Easyadmin</dt>
+        <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">EasyAdmin creates beautiful administration backends for your Symfony applications. It's free, fast and fully documented.</dd>
+      </div>
+    </dl>
+  </div>
+</div>
+
+{% endblock %}

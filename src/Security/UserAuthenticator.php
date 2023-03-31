@@ -19,7 +19,7 @@ class UserAuthenticator extends AbstractLoginFormAuthenticator
 {
     use TargetPathTrait;
 
-    public const LOGIN_ROUTE = 'app_admin';
+    public const LOGIN_ROUTE = 'app_login';
 
     public function __construct(private UrlGeneratorInterface $urlGenerator)
     {
@@ -48,7 +48,7 @@ class UserAuthenticator extends AbstractLoginFormAuthenticator
 
         // For example:
         //throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
-        return new RedirectResponse($this->urlGenerator->generate('default'));
+        return new RedirectResponse($this->urlGenerator->generate('app_admin'));
     }
 
     protected function getLoginUrl(Request $request): string

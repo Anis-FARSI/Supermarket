@@ -12,14 +12,16 @@
           </svg>
         </button>
       </div>
-      {% if app.user %}
-      <p class="text-white">{{ app.user.email }}</p>
+      {% if app.user %}<div class="flex justify-center">
+        <a href="{{ path('app_admin') }}" class="text-sm font-semibold leading-6 text-white">Dashboard</a>
+      </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <p class="text-white mr-6">{{ app.user.email }}</p>
         <a href="{{ path('app_logout') }}" class="text-sm font-semibold leading-6 text-white">Logout</a>
       </div>
       {% else %}
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="{{ path('app_admin') }}" class="text-sm font-semibold leading-6 text-white">Log in<span aria-hidden="true">&rarr;</span></a>
+        <a href="{{ path('app_login') }}" class="text-sm font-semibold leading-6 text-white">Log in<span aria-hidden="true">&rarr;</span></a>
       </div>
       {% endif %}
     </nav>

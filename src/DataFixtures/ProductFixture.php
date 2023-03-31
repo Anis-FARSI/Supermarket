@@ -13,10 +13,10 @@ class ProductFixture extends Fixture
     {
         $faker = \Faker\Factory::create('en_EN');
 
-        for ($i = 0; $i < 15; $i++) {
+        for ($i = 0; $i < 3; $i++) {
             $product = new Product();
             $product->setTitle($faker->word());
-            $product->setImg($faker->imageUrl(640, 480, 'market', true));
+            $product->setImg('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWx3o98vALNiG-Kis2ni4UL7pnxPvHlbqoUtrDutDjP5UvEZRCsiHQu-andphmFJ7PDBo&usqp=CAU');
             $product->setPrice($faker->numberBetween(0, 100));
             $product->setDescription($faker->paragraph());
             $product->setQuantity(mt_rand(0, 50));

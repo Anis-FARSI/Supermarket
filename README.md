@@ -1,6 +1,6 @@
 # Cachier des charges Supermarket
 
-## La présention du projet :
+# La présention du projet 
 Le projet consiste à développer une application de superette pour permettre aux clients de voir la liste des produits vendus. Le projet doit comporter un front-end pour afficher la liste des produits et une interface d'administration pour ajouter, modifier ou supprimer des produits. L'interface d'administration sera développée avec easyadmin et sera sécurisée par un email et un mot de passe.
 
 # Les fonctionnalités
@@ -13,7 +13,7 @@ Le projet consiste à développer une application de superette pour permettre au
 - Modifier les informations d'un produit existant
 - Supprimer un produit de la liste
 
-# Technololgies utilisées pour le projet 
+# Technologies utilisées pour le projet 
 - PHP v8.2.2  
 - Symfony v6.3
 - Mariadb v10.11.2
@@ -32,8 +32,8 @@ npm install
 ├── /home 
 │    └── /product
 │           └── /product/{product_id} 
-├── /admin 
-│
+├── /login 
+│ 
 ```
 
 # La liste des routes
@@ -41,8 +41,8 @@ npm install
 | URL | Méthode HTTP | Titre | Contenu | Commentaire |
 |--|--|--|--|--|
 | / | GET | Accueil | Page d'accueil | Page d'accueil pour les utilisateurs du site |  
-| /products | GET | Produits | Liste des produits | Page de présentation de tout les produits disponible |
-| /products/{id} | GET| Produit par ID | Page produit  | Page de présentation de toutes les informations d'un produit spécifique |
+| /product | GET | Produits | Liste des produits | Page de présentation de tout les produits disponible |
+| /product/{id} | GET| Produit par ID | Page produit  | Page de présentation de toutes les informations d'un produit spécifique |
 | /admin | GET | Connexion administrateur | Formulaire de connexion administrateur | Page de connexion pour accéder à EasyAdmin |
 | /admin | POST | Connexion administrateur | Traitement du formulaire de connexion | Action pour traiter les données du formulaire de connexion et connecter l'utilisateur administrateur |`
 
