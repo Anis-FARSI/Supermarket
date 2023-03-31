@@ -14,19 +14,24 @@ Le projet consiste à développer une application de superette pour permettre au
 - Supprimer un produit de la liste
 
 # Technololgies utilisées pour le projet 
-## Versions
 - PHP v8.2.2  
 - Symfony v6.3
+- Mariadb v10.11.2
 ## 
-- Front-end: Symfony, Tailwindcss
-- Back-end: Symfony, Easyadmin
-- Base de données : Mariadb (v10.11.2)
+- Front-end: Tailwindcss, Tailwind Elements
+- Back-end: Easyadmin, Fontawesome
+
+## Installation des composants
+```bash
+composer install
+npm install
+```
 
 # L'arborescence de l'application coté visiteur
 ```
 ├── /home 
-│    └── /products
-│           └── /products/{product_id} 
+│    └── /product
+│           └── /product/{product_id} 
 ├── /admin 
 │
 ```

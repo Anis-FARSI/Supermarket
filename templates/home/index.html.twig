@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div
+  class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
+  style="background-image: url({{ asset('images/background.jpg') }}); height: 1000px">
+  <div
+    class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"
+    style="background-color: rgba(0, 0, 0, 0.6)">
+    <div class="flex h-full items-center justify-center">
+      <div class="text-center text-white mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">SuperMarket</h1>
+      <p class="mt-6 text-lg leading-8">Welcome to our online supermarket ! Discover our wide range of quality products at competitive prices and shop easily from home. Feel free to browse our selection of products and place your order today !</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href={{ path('app_product')}}>
+          <button
+            type="button"
+            class="rounded border-2 border-neutral-50 px-7 pt-[10px] pb-[8px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Access to the store
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
