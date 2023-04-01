@@ -43,8 +43,8 @@ npm install
 | / | GET | Accueil | Page d'accueil | Page d'accueil pour les utilisateurs du site |  
 | /product | GET | Produits | Liste des produits | Page de présentation de tout les produits disponible |
 | /product/{id} | GET| Produit par ID | Page produit  | Page de présentation de toutes les informations d'un produit spécifique |
-| /admin | GET | Connexion administrateur | Formulaire de connexion administrateur | Page de connexion pour accéder à EasyAdmin |
-| /admin | POST | Connexion administrateur | Traitement du formulaire de connexion | Action pour traiter les données du formulaire de connexion et connecter l'utilisateur administrateur |`
+| /login | GET | Connexion administrateur | Formulaire de connexion administrateur | Page de connexion pour accéder à EasyAdmin |
+| /login | POST | Connexion administrateur | Traitement du formulaire de connexion | Action pour traiter les données du formulaire de connexion et connecter l'utilisateur administrateur |`
 
 ## Back-end
 | URL | Méthode HTTP | Titre | Contenu | Commentaire |
