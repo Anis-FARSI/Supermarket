@@ -25,6 +25,7 @@ Le projet consiste à développer une application de superette pour permettre au
 ```bash
 composer install
 npm install
+npm run build
 ```
 
 # L'arborescence de l'application coté visiteur
