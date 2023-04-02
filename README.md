@@ -24,6 +24,7 @@ Le projet consiste à développer une application de superette pour permettre au
 ## Installation des composants
 ```bash
 composer install
+composer require easycorp/easyadmin-bundle (optional)
 npm install
 npm run build
 ```
