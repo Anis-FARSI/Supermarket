@@ -1,4 +1,4 @@
-<header class="absolute inset-x-0 top-0 z-50 bg-black	">
+<header class="absolute inset-x-0 top-0 z-50 bg-black">
     <nav class="flex items-center justify-between p-6 lg:px-8 " aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="{{ path ('default') }}" class="-m-1.5 p-1.5">
@@ -12,9 +12,12 @@
           </svg>
         </button>
       </div>
-      {% if app.user %}<div class="flex justify-center">
+      {% if app.user %}
+      {% if 'ROLE_ADMIN' in app.user.roles %}
+      <div class="flex justify-center">
         <a href="{{ path('app_admin') }}" class="text-sm font-semibold leading-6 text-white">Dashboard</a>
       </div>
+      {% endif %}
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <p class="text-white mr-6">{{ app.user.email }}</p>
         <a href="{{ path('app_logout') }}" class="text-sm font-semibold leading-6 text-white">Logout</a>

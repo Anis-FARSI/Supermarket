@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Password Reset Email Sent{% endblock %}
+
+{% block body %}
+<section class="gradient-form h-full bg-neutral-200 dark:bg-neutral-700 mt-24 mb-8 flex justify-center">
+    <div class="container h-full p-10">
+        <div class="g-6 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
+            <div class="w-full">
+                <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
+                    <div class="g-0 lg:flex lg:flex-wrap">
+                        <div class="px-4 md:px-0 lg:w-6/12">
+                            <div class="md:mx-6 md:p-12">
+                                <div class="text-center">
+                                    <img
+                                    class="mx-auto w-48"
+                                    src="{{ asset('images/logo.png') }}"
+                                    alt="logo" />
+                                    <h4 class="mt-1 mb-12 pb-1 text-xl font-semibold">
+                                    The SuperMarket: Password Reset Email Sent
+                                    </h4>
+                                </div>
+                                <p>
+                                    If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.
+                                    This link will expire in {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+                                </p>
+                                <p>If you don't receive an email please check your spam folder or <a href="{{ path('app_forgot_password_request') }}"><span style="color: red">try again</span>
+                                </a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
