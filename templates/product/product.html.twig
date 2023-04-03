@@ -9,7 +9,7 @@
             <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                 <a href="{{ path('app_product_by_id', {'id' : product.id }) }}">
                 <img 
-                class="rounded-t-lg" src="{{ product.img }}" alt="picture" />
+                class="rounded-t-lg" src="{{ vich_uploader_asset(product, 'imageFile') }}" alt="picture" />
                 </a>
                 <div class="p-6">
                 <h5
